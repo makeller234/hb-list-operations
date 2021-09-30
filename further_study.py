@@ -109,14 +109,22 @@ def custom_remove(input_list, value):
         True
 
     """
+    # i = 0
+    # for item in input_list:
+    #     if item == value:
+    #         input_list.pop(i)
+    #         break
+    #     else:
+    #         i+=1
+
     i = 0
     for item in input_list:
         if item == value:
-            input_list.pop(i)
+            del input_list[i]
             break
         else:
             i+=1
-
+    #print(input_list)
 
     pass
 
