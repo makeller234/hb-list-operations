@@ -144,29 +144,11 @@ def custom_pop(input_list):
         ['Jan', 'Feb']
 
     """
-    # print(input_list[-1])
-    # del input_list[-1]
-
-    #print(input_list[-1])
-    # print(input_list)
-    # new_list = []
-    # # for item in input_list:
-    # #     new_list.append(item)
-
-    # print(str(input_list[-1]))
-    # i = 0
-    # while i < len(input_list):
-    #     new_list.append(input_list[i])
-    #     i += 1
 
     last_item = input_list[-1]
     del input_list[-1]
     return last_item
 
-    #return None
-
-
-    #return input_list[:-2]
 
 
 def custom_index(input_list, value):
@@ -188,7 +170,6 @@ def custom_index(input_list, value):
         else:
             i += 1
 
-    #return 0
 
 
 def custom_count(input_list, value):
@@ -258,21 +239,7 @@ def custom_contains(input_list, value):
         True
 
     """
-    # temp_var = 0
-    # item_index = 0
-    # for item in input_list:
-    #     if item[item_index] == value:
-    #         temp_var += 1
-    #         item_index += 1
-    #         print(f" if {temp_var}")
-    #     else:
-    #         temp_var = temp_var
-    #         print(f" else {temp_var}")
-        
-    #     if temp_var > 0:
-    #         return True
-    #     else:
-    #         return False
+
 
     for item in input_list:
         if item == value:
@@ -297,16 +264,6 @@ def custom_equality(some_list, another_list):
         False
 
     """
-
-    # matching_items = 0
-    # for item in some_list:
-    #     for item2 in another_list:
-    #         if item == item2:
-    #             #matching_items += 1
-    #             return True
-    #         else:
-    #             continue
-    # return False
 
     i = 0
     count = 0
